@@ -12,6 +12,8 @@ filetype plugin on      " load filetype-specific plugin files
 filetype indent on      " load filetype-specific indent files
 set wildmenu            " visual autocomplete for command menu
 set ruler				" always show current position
+set splitbelow			" fix horizontal split
+set splitright			" fix vertical split
 
 " TABS & SPACES
 set tabstop=4			" number of visual spaces per TAB
