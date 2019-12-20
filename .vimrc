@@ -5,7 +5,7 @@ set visualbell			" Blink cursor on error instead of beeping (grr)
 colorscheme slate		" Color scheme
 
 " UI CONFIG
-set number              " show line numbers
+set number rnu          " show line numbers
 set showcmd             " show command in bottom bar
 set cursorline          " highlight current line
 filetype plugin on      " load filetype-specific plugin files
