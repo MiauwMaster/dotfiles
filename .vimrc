@@ -7,7 +7,6 @@ colorscheme slate		" Color scheme
 " UI CONFIG
 set number rnu          " show line numbers
 set showcmd             " show command in bottom bar
-set cursorline          " highlight current line
 filetype plugin on      " load filetype-specific plugin files
 filetype indent on      " load filetype-specific indent files
 set wildmenu            " visual autocomplete for command menu
