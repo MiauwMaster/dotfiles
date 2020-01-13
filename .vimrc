@@ -50,6 +50,13 @@ nmap <leader>w :w!<cr>
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
 " SNIPPETS
-nnoremap <leader>html :-1 read $HOME/.vim/.skeleton.html<CR>3jwf>a
+nnoremap <leader>html :-1 read $HOME/.vim/.skeleton.html<CR>8j10la
 nnoremap <leader>cpp :-1 read $HOME/.vim/.skeleton.cpp<CR>3j3la
 nnoremap <leader>py :-1 read $HOME/.vim/.skeleton.py<CR>j3la
+
+" LOAD PLUGINS
+packloadall
+
+" LOAD HELPTAGS
+silent! helptags ALL
+
