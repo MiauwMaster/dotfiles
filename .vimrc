@@ -3,6 +3,10 @@ set nocompatible		                " Don't try to be vi compatible
 syntax on				                " Turn on syntax highlighting
 colorscheme slate		                " Color scheme
 
+" DISABLE BELL 
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set vb t_vb=
+
 " UI CONFIG
 set number rnu                          " show line numbers
 set showcmd                             " show command in bottom bar
