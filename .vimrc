@@ -1,7 +1,6 @@
 " BASICS
 set nocompatible		                " Don't try to be vi compatible
 syntax on				                " Turn on syntax highlighting
-set visualbell			                " Blink cursor on error instead of beeping (grr)
 colorscheme slate		                " Color scheme
 
 " UI CONFIG
