@@ -1,0 +1,15 @@
+version: "3.3"
+
+services:
+    SERVICENAME:
+        image:
+        container_name:
+        labels:
+            - "traefik.enable=true"
+            - "traefik.http.routers.SERVICENAME.rule=Host(`URL`)"
+            - "traefik.http.routers.SERVICENAME.entrypoints=websecure"
+            - "traefik.http.routers.SERVICENAME.tls.certresolver=certresolver"
+networks:
+    default:
+        external:
+            name: "web"

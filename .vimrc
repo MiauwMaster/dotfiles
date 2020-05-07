@@ -3,7 +3,7 @@ set nocompatible		                " Don't try to be vi compatible
 syntax on				                " Turn on syntax highlighting
 colorscheme slate		                " Color scheme
 
-" DISABLE BELL 
+" DISABLE BELL
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set vb t_vb=
 
@@ -37,7 +37,7 @@ set foldmethod=indent	                " fold based on indent level
 nnoremap <space> z		                " remap <space> folding to z
 
 " MAPPING
-:let mapleader = ","		" Pick a leader key
+:let mapleader = ","            		" Pick a leader key
 
 " move vertically by visual line
 nnoremap j gj
@@ -49,24 +49,27 @@ nnoremap gV `[v`]
 " Fast (forced) saving
 nnoremap <leader>w :w!<cr>
 
-" Remap <C-X><C-O> autocomplete to <C-@> which really means <C-SPACE> 
+" Remap <C-X><C-O> autocomplete to <C-@> which really means <C-SPACE>
 inoremap <C-@> <C-X><C-O>
 
-" :W sudo saves the file 
+" :W sudo saves the file
 " (useful for handling the permission-denied error)
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
 " Autoindent entire file and return to last pos
 nmap <leader>g gg=G''
 
+" Replace all occurrences of word under cursor
+nnoremap <leader>ra :%s/\<<C-r><C-W>\>//g<Left><Left>
+
 " SNIPPETS
 nnoremap <leader>html :-1 read $HOME/.vim/.skeleton.html<CR>8j10la
 nnoremap <leader>cpp :-1 read $HOME/.vim/.skeleton.cpp<CR>3j3la
 nnoremap <leader>py :-1 read $HOME/.vim/.skeleton.py<CR>j3la
+nnoremap <leader>dc :-1 read $HOME/.vim/.skeleton.dc<CR>3j5l
 
 " LOAD PLUGINS
 packloadall
 
 " LOAD HELPTAGS
 silent! helptags ALL
-
